@@ -1,0 +1,10 @@
+﻿{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Koszty Energii",
+        "description": "Skonfiguruj integracje w configuration.yaml (platforma sensor)."
+      }
+    }
+  }
+}

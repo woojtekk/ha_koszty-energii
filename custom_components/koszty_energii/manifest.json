@@ -1,0 +1,9 @@
+﻿{
+  "domain": "koszty_energii",
+  "name": "Koszty Energii",
+  "version": "0.1.0",
+  "documentation": "",
+  "requirements": [],
+  "codeowners": [],
+  "iot_class": "local_polling"
+}
