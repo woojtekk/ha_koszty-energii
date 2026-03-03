@@ -2,6 +2,12 @@
 
 Integracja `koszty_energii` tworzy sensory zuzycia energii na podstawie encji licznika (narastajacej).
 
+## Instalacja (HACS)
+
+- Dodaj repozytorium jako custom repository (Type: Integration)
+- Zainstaluj z HACS
+- Zrestartuj Home Assistant
+
 ## Konfiguracja (YAML)
 
 ```yaml

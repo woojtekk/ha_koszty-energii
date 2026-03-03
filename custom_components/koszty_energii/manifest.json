@@ -2,7 +2,8 @@
   "domain": "koszty_energii",
   "name": "Koszty Energii",
   "version": "0.1.0",
-  "documentation": "",
+  "documentation": "https://github.com/woojtekk/ha_koszty-energii",
+  "issue_tracker": "https://github.com/woojtekk/ha_koszty-energii/issues",
   "requirements": [],
   "codeowners": [],
   "iot_class": "local_polling"
