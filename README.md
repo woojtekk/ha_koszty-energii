@@ -17,6 +17,12 @@ Bazuje na encji licznika narastajacego (np. kWh). Wartosci sa liczone jako rozni
 3. Zainstaluj `Koszty Energii`
 4. Zrestartuj Home Assistant
 
+## Konfiguracja (UI)
+
+1. Ustawienia -> Urzadzenia i uslugi -> Dodaj integracje
+2. Wyszukaj **Koszty Energii**
+3. Wybierz encje licznika i nazwe
+
 ## Konfiguracja (YAML)
 
 ```yaml

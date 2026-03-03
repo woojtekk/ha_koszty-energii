@@ -18,7 +18,7 @@ from homeassistant.helpers.restore_state import RestoreEntity
 from homeassistant.helpers.typing import ConfigType, DiscoveryInfoType
 
 from .const import CONF_NAME, CONF_SOURCE_ENTITY, DEFAULT_NAME
-from .schema import PLATFORM_SCHEMA, SCAN_INTERVAL
+from .schema import PLATFORM_SCHEMA as KE_PLATFORM_SCHEMA, SCAN_INTERVAL
 
 
 @dataclass(frozen=True)
@@ -60,6 +60,8 @@ PERIODS: list[PeriodDef] = [
         period_id=lambda d: f"{d.year}",
     ),
 ]
+
+PLATFORM_SCHEMA = KE_PLATFORM_SCHEMA
 
 
 async def async_setup_platform(

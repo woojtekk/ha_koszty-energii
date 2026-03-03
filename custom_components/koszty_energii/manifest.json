@@ -7,10 +7,7 @@
   "requirements": [],
   "iot_class": "local_polling",
   "homeassistant": "2024.1.0",
-  "loggers": [
-    "custom_components.koszty_energii"
-  ],
-  "codeowners": [
-    "@woojtekk"
-  ]
+  "loggers": ["custom_components.koszty_energii"],
+  "codeowners": ["@woojtekk"],
+  "config_flow": true
 }
