@@ -1,7 +1,7 @@
 {
   "domain": "koszty_energii",
   "name": "Koszty Energii",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "documentation": "https://github.com/woojtekk/ha_koszty-energii",
   "issue_tracker": "https://github.com/woojtekk/ha_koszty-energii/issues",
   "requirements": [],
