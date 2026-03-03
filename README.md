@@ -1,12 +1,21 @@
 ﻿# Koszty Energii
 
-Integracja `koszty_energii` tworzy sensory zuzycia energii na podstawie encji licznika (narastajacej).
+Integracja `koszty_energii` tworzy sensory zuzycia energii dla okresow:
+- dziennie
+- tygodniowo (ISO, poniedzialek = pierwszy dzien tygodnia)
+- miesiecznie
+- kwartalnie
+- polrocznie
+- rocznie
+
+Bazuje na encji licznika narastajacego (np. kWh). Wartosci sa liczone jako roznica od poczatku okresu. Jesli licznik sie zresetuje (spadek wartosci), okres startuje od nowa.
 
 ## Instalacja (HACS)
 
-- Dodaj repozytorium jako custom repository (Type: Integration)
-- Zainstaluj z HACS
-- Zrestartuj Home Assistant
+1. HACS -> Integrations -> ... -> Custom repositories
+2. Dodaj repozytorium `https://github.com/woojtekk/ha_koszty-energii` jako **Integration**
+3. Zainstaluj `Koszty Energii`
+4. Zrestartuj Home Assistant
 
 ## Konfiguracja (YAML)
 
@@ -17,10 +26,24 @@ sensor:
     name: Koszty Energii
 ```
 
-Sensory:
-- dziennie
-- tygodniowo
-- miesiecznie
-- kwartalnie
-- polrocznie
-- rocznie
+### Parametry
+- `source_entity` (wymagane): encja licznika narastajacego
+- `name` (opcjonalne): prefix nazwy sensora (domyslnie `Koszty Energii`)
+
+## Sensory
+Dla podanego `name` powstaja sensory:
+- `Koszty Energii Dziennie`
+- `Koszty Energii Tygodniowo`
+- `Koszty Energii Miesiecznie`
+- `Koszty Energii Kwartalnie`
+- `Koszty Energii Polrocznie`
+- `Koszty Energii Rocznie`
+
+## Uwagi
+- Jednostka jest dziedziczona z encji licznika.
+- Aktualizacja co 1 minute.
+- Sensory przechowuja stan po restarcie (RestoreEntity).
+
+## Wsparcie
+- Issues: https://github.com/woojtekk/ha_koszty-energii/issues
+- Dokumentacja: https://github.com/woojtekk/ha_koszty-energii
