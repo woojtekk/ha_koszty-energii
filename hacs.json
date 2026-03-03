@@ -1,7 +1,1 @@
-{
-  "name": "Koszty Energii",
-  "content_in_root": false,
-  "render_readme": true,
-  "zip_release": true,
-  "filename": "koszty_energii.zip"
-}
+{ "name": "Koszty Energii", "domains": [ "sensor" ], "country": "PL", "content_in_root": false, "render_readme": true, "zip_release": true, "filename": "koszty_energii.zip" }

@@ -5,6 +5,8 @@
   "documentation": "https://github.com/woojtekk/ha_koszty-energii",
   "issue_tracker": "https://github.com/woojtekk/ha_koszty-energii/issues",
   "requirements": [],
-  "codeowners": [],
-  "iot_class": "local_polling"
+  "iot_class": "local_polling",
+  "homeassistant": "2024.1.0",
+  "loggers": ["custom_components.koszty_energii"],
+  "codeowners": ["@woojtekk"]
 }
